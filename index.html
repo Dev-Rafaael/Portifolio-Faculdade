@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <link rel="stylesheet" href="./estilo.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Meu Portfólio</div>
+            <button class="menu-toggle">&#9776;</button>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#trabalhos">Trabalhos Recentes</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section classe="sobre">
+        <h1>Sobre Mim</h1>
+        <p>Salve, família! Sou um programador full stack apaixonado por tecnologia e inovação.  
+           Corinthiano roxo, desenvolvo código com a mesma garra que o Timão joga na arena.  
+           Transformo ideias em soluções digitais, sempre buscando evolução no game da programação.  
+           Vaii Corinthians 🚀⚽🖥️</p>
+    </section>
+    
+
+    <section id="trabalhos">
+        <h2>Trabalhos Recentes</h2>
+        <div class="carousel">
+            <button class="prev">&#10094;</button>
+            <div class="carousel-images">
+                <img src="jhennifer.jpg" alt="Projeto 1">
+                <img src="garro.jpg" alt="Projeto 2">
+                <img src="memphis.png" alt="Projeto 3">
+            </div>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="video">
+        <h2>Vídeo Apresentação</h2>
+        <div class="video-container">
+            <iframe 
+                width="100%" 
+                height="500" 
+                src="https://www.youtube.com/embed/rsDf9E1RxYU" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" value="Rafael Moraes Boavas" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" value="RafaelMB@gmail.com"required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" placeholder="Vai Corinthians" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
